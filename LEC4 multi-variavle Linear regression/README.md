@@ -28,9 +28,29 @@ Multivariable 이란?? 말그대로 **다중** 예를들어서
 하지만 만약에 행이 100개 많게는 1만개가 넘어버리면 총 1만번의 행렬곱이 필요하다.
 하지만 걱정하지마라 행렬은 이걸 한번에 처리 가능하다
 
-<img src='https://user-images.githubusercontent.com/82213429/136366750-85ed5e64-fa84-457f-8c2e-8ea0750c5001.png' width='700'>
+<img src='https://user-images.githubusercontent.com/82213429/136368326-5c896414-30bc-4aed-b288-6f25e105ef97.png' width='700'>
 
 위와같이 아무리 많은 열이와도 처리가 가능하다. **형태(shape)만 맞다면**
 
-이후 행렬곱.설명
+![image](https://user-images.githubusercontent.com/82213429/136368494-1ea212db-4357-451d-ab15-1e6ee115b54c.png)
+
+ **[H, L] [L, N] = [H, N]** 
+ 
+<img src='https://user-images.githubusercontent.com/82213429/136368681-c1cc98e5-8702-40c7-b985-7ea4e144cd9f.png' width='700'>
+
+사실 W 의 형태는 미리 주어진게 아니라 위처럼 X 와 H(x) 를 보고 **[H, L] [L, N] = [H, N]**  을이용해서 도출해 낸 것 이다.
+
+### WX vs XW
+
+이론 : H(x) = Wx + b
+
+실제 : XW
+
+둘의 수학적인 의미는 거의 같다. 단지, 이렇게 쓸뿐
+
+## 두줄요약
+1. X의 변수가 여러개라면 행렬곱을 이용한다
+2. 행렬곱을 사용하기위해선 형태(shape)를 맞춰줘야한다 **[H, L] [L, N] = [H, N]**
+
+
 
