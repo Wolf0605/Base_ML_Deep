@@ -7,7 +7,7 @@ input = input()
 if input == '안녕'
   print(f'{input}하세요')
 ```
-와 같이 정해진 입력을 입력했을 떄 출력이 되는 형식 - >  Explicic programming
+와 같이 정해진 입력을 입력했을 떄 출력이 되는 형식 - >  Explicit programming
 
 **문제점 예시**
 1. Spam filter : Many rules ( 번호가 너무 많음 )
