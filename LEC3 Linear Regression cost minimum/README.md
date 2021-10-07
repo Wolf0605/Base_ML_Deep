@@ -25,7 +25,7 @@ In Linear Regression b = 0 이라면, H(x) = Wx 로 간단하게 봐보자
 **미분** 을 이용 ( 그 점의 기울기를 이용 )
 ![image](https://user-images.githubusercontent.com/82213429/136305873-8fa1d241-3fb2-419c-9453-ef89a84f9b3e.png)
 
-W 를 현재있는 W 값에다가 알파(learning rate)라는 값에다가 cost(W) 함수를 미분한것(그 점의 기울기)을 곱해줘서 뺴는것.
+알파(learning rate)라는 값에 cost(W) 함수를 미분한것(그 점의 기울기)을 곱해줘서 현재있는 W 값에서 빼주는 것.
 
 여기서 cost(W)의 미분값(기울기)은, 0에 가장 가까운 값으로 가기위해 W를 계속 조정한다.
 
