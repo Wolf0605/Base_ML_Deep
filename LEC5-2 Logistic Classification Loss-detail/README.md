@@ -1,4 +1,4 @@
-# Logistic Regression 의 loss function
+# Logistic Classification 의 loss function
 
 <img src='https://user-images.githubusercontent.com/82213429/136689972-f983da3b-5a2a-424c-a0c4-ce3305ebb0cc.png' width='700'>
 
@@ -24,7 +24,7 @@ y = e^x 는 **log 로 풀었따** 우리가 푸는거는 **Binary Classification
 
 즉, 기계가 학습할 때  만약 예측을 잘못해서 y = 1 인데 H(x) = 0으로 예측한다고 하면은 Loss function 은 엄청 큰 loss 값을 얻고 이를 잘못됐다고 인식한다.
 
-그리고 위의 **두 그래프를 합치면** 원래 H(x) = W + b 일떄의 **밥그릇 형태가 되어** Loss fucntion 으로  **loss='mse'** 를 **다시 쓸 수 있게 된다.** 
+그리고 위의 **두 그래프를 합치면** 원래 H(x) = W + b 일떄의 **밥그릇 형태가 되어** Loss fucntion 으로 SGD(경사하강법) 를 **다시 쓸 수 있게 된다.** 
 
 
 <img src='https://user-images.githubusercontent.com/82213429/136690653-6d9438bd-218f-43e1-ae12-844ad2563a20.png' width='700'>
@@ -38,7 +38,10 @@ y = e^x 는 **log 로 풀었따** 우리가 푸는거는 **Binary Classification
 
 <img src='https://user-images.githubusercontent.com/82213429/136691474-5196e44f-e8f2-48fe-a2b2-9e550f048264.png' width='300'>  <img src='https://user-images.githubusercontent.com/82213429/136691415-5c49ea8c-d3d3-40ca-a42e-58a027f140d0.png' width='500'>
 
-
+### 세줄요약
+1. Logistic classification 에서 **sigmoid** 를 이용해서 loss fucntion이 **구불구불한 밥그릇이라 경사하강법(SGD)을 통해 global_minimum을 찾기 어려웠다**
+2. H(x) (Hypothesis)의 e^x 의 극성인 **log 를 이용**하여 y=0 , y=1 일때로 나눠서 기존 **밥그릇(H(x) =Wx +b)의 형태의 loss fucntion 을 만들었다**.
+3. **다시 SGD( 경사하강법 )을 쓸 수 있게 됐다!!**
 
 
 
